@@ -1,0 +1,17 @@
+services:
+  forward-cut2-bot:
+    build: .
+    environment:
+      ADMINS: 5302928958
+      API_ID: 15545322
+      API_HASH: cd763e413b92cda289836308b5cd8101
+      BOT_TOKEN: $BOT_TOKEN
+      COLLECTION_NAME: kcforv3
+      LOG_CHANNEL: -1001382755710
+      DATABASE_NAME: Cluster0
+      DATABASE_URI: mongodb+srv://kcforv3:kcforv3@cluster0.w1siy.mongodb.net/?retryWrites=true&w=majority
+      TARGET_CHANNEL: -1001323972230
+      BOT_USERNAME: $BOT_USERNAME
+    resources:
+      cpu: 1000m
+      memory: 3Gi
